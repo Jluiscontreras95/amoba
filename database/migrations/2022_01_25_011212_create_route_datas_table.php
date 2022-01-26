@@ -15,8 +15,8 @@ class CreateRouteDatasTable extends Migration
     {
         Schema::create('route_datas', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('route_id');
-            $table->integer('calendar_id');
+            $table->integer('route_id')->references('id')->on('routes')->onDelete('cascade');
+            $table->integer('calendar_id')->references('id')->on('calendar')->onDelete('cascade');
             $table->char('vinculation_route')->nullable();
             $table->integer('route_circular');
             $table->dateTime('date_init');
@@ -29,7 +29,6 @@ class CreateRouteDatasTable extends Migration
             $table->boolean('sat');
             $table->boolean('sun');
             $table->timestamps();
-
 
         });
     }

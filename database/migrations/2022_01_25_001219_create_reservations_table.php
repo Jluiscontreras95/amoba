@@ -15,13 +15,13 @@ class CreateReservationsTable extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_plan_id')->nullable();
-            $table->integer('route_id')->nullable();
-            $table->integer('track_id')->nullable();
+            $table->integer('user_plan_id')->references('id')->on('user_plans')->onDelete('cascade')->nullable();
+            $table->integer('route_id')->references('id')->on('routes')->onDelete('cascade')->nullable();
+            $table->integer('track_id')->references('id')->on('track')->onDelete('cascade')->nullable();
             $table->char('reservation_start')->nullable();
             $table->char('reservation_end')->nullable();
-            $table->integer('route_stop_origin_id');
-            $table->integer('route_stop_destination_id');
+            $table->integer('route_stop_origin_id')->references('id')->on('route_stop_origin')->onDelete('cascade')->nullable();
+            $table->integer('route_stop_destination_id')->references('id')->on('route_stop_destination')->onDelete('cascade')->nullable();
             $table->timestamps();
             $table->char('deleted_at')->nullable();
 

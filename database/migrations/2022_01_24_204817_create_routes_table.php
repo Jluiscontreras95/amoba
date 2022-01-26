@@ -15,7 +15,7 @@ class CreateRoutesTable extends Migration
     {
         Schema::create('routes', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('external_id')->nullable();
+            $table->integer('external_id')->references('id')->on('external')->onDelete('cascade')->nullable();
             $table->char('invitation_code');
             $table->char('title');
             $table->date('start_timestamp');

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\RouteGroup;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,21 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//calendar
+Route::resource('calendar','CalendarController');
+
+//reservations
+Route::resource('reservation','ReservationController');
+
+//routes
+Route::resource('route','RouteController');
+
+//route-data
+Route::resource('routedata','RouteDataController');
+
+//services
+Route::resource('service','ServiceController');
+
+//user-plan
+Route::resource('userplan','UserPlanController');

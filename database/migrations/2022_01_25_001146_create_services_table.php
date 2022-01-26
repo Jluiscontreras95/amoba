@@ -15,10 +15,10 @@ class CreateServicesTable extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->integer('id');
-            $table->char('external_id');
-            $table->char('external_budget_id');
-            $table->char('external_route_id');
-            $table->integer('track_id')->nullable();
+            $table->char('external_id')->references('id')->on('external')->onDelete('cascade')->nullable();
+            $table->char('external_budget_id')->references('id')->on('budget')->onDelete('cascade')->nullable();
+            $table->char('external_route_id')->references('id')->on('external_route')->onDelete('cascade')->nullable();
+            $table->integer('track_id')->references('id')->on('track')->onDelete('cascade')->nullable();
             $table->text('name',50)->nullable();
             $table->text('notes',300)->nullable();
             $table->timestamp('timestamp');
@@ -43,7 +43,7 @@ class CreateServicesTable extends Migration
             $table->timestamp('modified');
             $table->char('synchronized_downstream')->nullable();
             $table->char('synchronized_upstream')->nullable();
-            $table->integer('province_id');
+            $table->integer('province_id')->references('id')->on('province')->onDelete('cascade')->nullable();
             $table->integer('sale_tickets_drivers');
             $table->text('notes_drivers',100)->nullable();
             $table->text('itinerary_drivers',100);

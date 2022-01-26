@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\RouteData;
+use App\Route;
 
-class RouteDataController extends Controller
+class RouteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class RouteDataController extends Controller
     public function index()
     {
         //
-        return RouteData::all();
+        return Route::all();
     }
 
     /**
@@ -48,7 +48,7 @@ class RouteDataController extends Controller
     public function show($id)
     {
         //
-        return RouteData::FindOrFail($id);
+        return Route::FindOrFail($id);
     }
 
     /**

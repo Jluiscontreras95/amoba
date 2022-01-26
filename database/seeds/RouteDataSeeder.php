@@ -14,8 +14,8 @@ class RouteDataSeeder extends Seeder
         //
         $json = database_path('data/route_data.json');
         $data = file_get_contents($json);
-
-        foreach(json_decode($data)->routes_data as $row){
+        $good = json_decode($data)->data;
+        foreach ($good as $row) {
 
           DB::table('route_datas')->insert([
 
