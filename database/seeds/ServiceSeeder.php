@@ -20,11 +20,10 @@ class ServiceSeeder extends Seeder
 
         foreach(json_decode($data)->services as $row){
 
+dd(json_decode($row->status_info, true));
+
+
           DB::table('services')->insert([
-
-
-
-
 
           'id' => $row->id,
           'external_id' => $row->external_id,
@@ -46,10 +45,8 @@ class ServiceSeeder extends Seeder
           'reported_arrival_kms' => $row->reported_arrival_kms,
           'reported_vehicle_plate_number' => $row->reported_vehicle_plate_number,
           'status' => $row->status,
-
-        //  "status_info" : "{\"driver\": false, \"vehicle\": false, \"readings\": false, \"tracking\": false, \"ended_late\": false, \"play_service\": false, \"started_late\": false, \"stop_service\": false}",
-
-          'reprocess_status' => $row->reprocess_status ,
+          'status_info' => $row->status_info,
+          'reprocess_status' => $row->reprocess_status,
           'return' => $row->return,
           'created' => $row->created,
           'modified' => $row->modified,
@@ -66,8 +63,5 @@ class ServiceSeeder extends Seeder
 
 
         }
-
-
-
     }
 }

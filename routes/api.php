@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Routing\RouteGroup;
 
@@ -24,6 +25,7 @@ Route::resource('calendar','CalendarController');
 
 //reservations
 Route::resource('reservation','ReservationController');
+//Route::get('reservation/{reservation}','ReservationController@show');
 
 //routes
 Route::resource('route','RouteController');
@@ -36,3 +38,7 @@ Route::resource('service','ServiceController');
 
 //user-plan
 Route::resource('userplan','UserPlanController');
+
+//users
+//Route::resource('user','UserController');
+Route::get('user/{user}','UserController@getReservate');

@@ -3,7 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 use App\Reservation;
+use App\User;
+use App\Route;
+use App\UserPlan;
+use App\RouteData;
 
 class ReservationController extends Controller
 {
@@ -15,7 +20,7 @@ class ReservationController extends Controller
     public function index()
     {
         //
-        return Reservation::all();
+        //return Reservation::all();
     }
 
     /**
@@ -48,7 +53,18 @@ class ReservationController extends Controller
     public function show($id)
     {
         //
-        return Reservation::findOrFail($id);
+
+
+        $reservation = Reservation::select('*')
+                                          ->whereYear('reservation_start', '>=', $from)
+                                          ->get();
+        return $reservation;
+
+
+
+
+
+
     }
 
     /**

@@ -9,5 +9,10 @@ class Route extends Model
 {
     //
 
+        public function data(){
+
+          return $this->hasMany(RouteData::class);
+
+        }
 
 }

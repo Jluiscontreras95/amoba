@@ -16,8 +16,8 @@ class DatabaseSeeder extends Seeder
         $this->call(CalendarSeeder::class);
         $this->call(ReservationSeeder::class);
         $this->call(RouteDataSeeder::class);
-        $this->call(RouteSeeder::class);
         $this->call(ServiceSeeder::class);
         $this->call(UserPlanSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }

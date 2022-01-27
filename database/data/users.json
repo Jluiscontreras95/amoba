@@ -26,7 +26,7 @@
 		"user_vertical" : null,
 		"language_id" : 2,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 3,
@@ -54,7 +54,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 4,
@@ -82,7 +82,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 5,
@@ -110,7 +110,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 6,
@@ -138,7 +138,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 7,
@@ -166,7 +166,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 8,
@@ -194,7 +194,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 9,
@@ -222,7 +222,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 10,
@@ -250,7 +250,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 11,
@@ -278,7 +278,7 @@
 		"user_vertical" : null,
 		"language_id" : 6,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 12,
@@ -306,7 +306,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 13,
@@ -334,7 +334,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 14,
@@ -362,7 +362,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 15,
@@ -390,7 +390,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 16,
@@ -418,7 +418,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 17,
@@ -446,7 +446,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 18,
@@ -474,7 +474,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 19,
@@ -502,7 +502,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 20,
@@ -530,7 +530,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 21,
@@ -558,7 +558,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 22,
@@ -586,7 +586,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 23,
@@ -614,7 +614,7 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 34,
@@ -642,7 +642,7 @@
 		"user_vertical" : null,
 		"language_id" : 2,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 35,
@@ -670,7 +670,7 @@
 		"user_vertical" : null,
 		"language_id" : 4,
 		"no_registered" : 0,
-		"deleted_at" : null,
+		"deleted_at" : null
 	},
 	{
 		"id" : 36,
@@ -698,6 +698,6 @@
 		"user_vertical" : null,
 		"language_id" : null,
 		"no_registered" : 1,
-		"deleted_at" : null,
+		"deleted_at" : null
 	}
 ]}
